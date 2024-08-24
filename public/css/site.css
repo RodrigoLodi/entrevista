@@ -1,0 +1,21 @@
+
+:root {
+  --primary-color: #21323A;
+  --secondary-color: #324147;
+  --color-composta: #88BAAF;
+  --background-color: rgb(243 244 246);
+  --text-color: #2c3e50;
+}
+
+body: { background-color: #ccccca; }
+
+.btn-padrao { border: none; background-color: #21323A; color: white; font-weight: bold; padding: 10px 20px; border-radius: 15px; border: 2px solid transparent }
+.btn-padrao:hover { color: #21323A; background-color: white; border: 2px solid #21323A; transition: 0.5s }
+.btn-padrao {transition: transform 0.3s ease; }
+.btn-padrao:hover { transform: scale(1.05); }
+
+.btn-secundario { color: #21323A; font-weight: bold; padding: 10px 20px; border-radius: 15px; }
+.btn-secundario:hover { background-color: #21323a25; transition: 0.5s }
+.btn-secundario {transition: transform 0.3s ease; }
+
+.clicable { cursor: pointer; }
