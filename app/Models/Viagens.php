@@ -12,11 +12,10 @@ class Viagens extends Model
     use HasFactory;
     protected $table = 'viagens';
 
-	protected $fillable = [
+    protected $fillable = [
         'km_inicial',
         'km_final',
         'veiculo_id',
-        'motorista_id',
     ];
 
     public function veiculo()
@@ -24,8 +23,8 @@ class Viagens extends Model
         return $this->belongsTo(Veiculos::class);
     }
 
-    public function motorista()
+    public function motoristas()
     {
-        return $this->belongsTo(Motoristas::class);
+        return $this->belongsToMany(Motoristas::class, 'motorista_viagem', 'viagem_id', 'motorista_id');
     }
 }

@@ -16,7 +16,7 @@ Route::get('/dashboard', function () {
 
 Route::resource('/motoristas', MotoristasController::class);
 
-Route::resource('/viagens', ViagensController::class);
+Route::resource('viagens', ViagensController::class);
 
 Route::resource('/veiculos', VeiculosController::class);
 

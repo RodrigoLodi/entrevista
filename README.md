@@ -122,3 +122,8 @@ Este projeto foi configurado utilizando Docker e Laravel. Siga as etapas abaixo 
 * E também adicione colunas de motorista_id e veiculo_id à tabela viagens:
 
   * php artisan make:migration add_motorista_id_and_veiculo_id_to_viagens_table --table=viagens
+
+* Comando utilizados para criar tabela de motoristas vinculadas a viagem:
+  * php artisan make:migration create_motorista_viagem_table --create=motorista viagem
+  * php artisan make:migration remove_motorista_id_from_viagens_table --table=viagens
+  * php artisan make:migration create_motorista_viagem_table --create=motorista_viagem
